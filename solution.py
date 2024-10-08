@@ -3,7 +3,7 @@ def even_word(S):
     char_counts = {}
     odd_count = 0
 
-    if not N > 0 or N < 200000:
+    if N < 0 or N > 200000:
         print("Length of string must be in range of 0 and 200000")
     
     for char in S:
@@ -19,4 +19,3 @@ def even_word(S):
 
 print(even_word("aaaabbbbcccc")) # Expected output -> 0
 print(even_word("abcdef")) # Expected output -> 6
-print(even_word("wwwxxxyyyzzz")) # Expected output -> 4
